@@ -99,7 +99,7 @@ c:\Users\Public>
 
 If you can't find **any working CLSID** you should visit this page:
 
-{% embed url="https://ohpe.it/juicy-potato/CLSID/" %}
+{% embed url="https://ohpe.it/juicy-potato/CLSID/" caption="" %}
 
 There you can **find** some **CLSID that you could** use instead of the default one to privesc.
 

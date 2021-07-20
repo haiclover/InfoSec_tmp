@@ -245,7 +245,7 @@ kextunload -b com.apple.driver.ExampleBundle
 
 ### **Login Items**
 
-In System Preferences -&gt; Users & Groups -&gt; **Login Items** you can find  **items to be executed when the user logs in**.  
+In System Preferences -&gt; Users & Groups -&gt; **Login Items** you can find **items to be executed when the user logs in**.  
 It it's possible to list them, add and remove from the command line:
 
 ```bash
@@ -256,8 +256,7 @@ osascript -e 'tell application "System Events" to get the name of every login it
 osascript -e 'tell application "System Events" to make login item at end with properties {path:"/path/to/itemname", hidden:false}' 
 
 #Remove an item:
-osascript -e 'tell application "System Events" to delete login item "itemname"' 
-
+osascript -e 'tell application "System Events" to delete login item "itemname"'
 ```
 
 ### At
@@ -401,12 +400,12 @@ CheckForNetwork()
     local test
 
     if [ -z "${NETWORKUP:=}" ]; then
-	test=$(ifconfig -a inet 2>/dev/null | sed -n -e '/127.0.0.1/d' -e '/0.0.0.0/d' -e '/inet/p' | wc -l)
-	if [ "${test}" -gt 0 ]; then
-	    NETWORKUP="-YES-"
-	else
-	    NETWORKUP="-NO-"
-	fi
+    test=$(ifconfig -a inet 2>/dev/null | sed -n -e '/127.0.0.1/d' -e '/0.0.0.0/d' -e '/inet/p' | wc -l)
+    if [ "${test}" -gt 0 ]; then
+        NETWORKUP="-YES-"
+    else
+        NETWORKUP="-NO-"
+    fi
     fi
 }
 
@@ -422,19 +421,19 @@ GetPID ()
     local     pid=""
 
     if [ -f "${pidfile}" ]; then
-	pid=$(head -1 "${pidfile}")
-	if ! kill -0 "${pid}" 2> /dev/null; then
-	    echo "Bad pid file $pidfile; deleting."
-	    pid=""
-	    rm -f "${pidfile}"
-	fi
+    pid=$(head -1 "${pidfile}")
+    if ! kill -0 "${pid}" 2> /dev/null; then
+        echo "Bad pid file $pidfile; deleting."
+        pid=""
+        rm -f "${pidfile}"
+    fi
     fi
 
     if [ -n "${pid}" ]; then
-	echo "${pid}"
-	return 0
+    echo "${pid}"
+    return 0
     else
-	return 1
+    return 1
     fi
 }
 

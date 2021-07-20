@@ -4,7 +4,7 @@ description: >-
   I have learnt in CTFs, real life apps, and reading researches and news.
 ---
 
-# HackTricks
+# InfoSec
 
 ![](.gitbook/assets/portada-alcoholica.png)
 
@@ -39,8 +39,6 @@ If you want to **share some tricks with the community** you can also submit **pu
 You can find **my reviews of the certifications eMAPT and eWPTXv2** \(and their **respective preparation courses**\) in the following page:
 
 {% page-ref page="courses-and-certifications-reviews/ine-courses-and-elearnsecurity-certifications-reviews.md" %}
-
-
 
 \*\*\*\*
 

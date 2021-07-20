@@ -1,6 +1,6 @@
 # Table of contents
 
-* [HackTricks](README.md)
+* [InfoSec](README.md)
 * [About the author](about-the-author.md)
 * [Getting Started in Hacking](getting-started-in-hacking.md)
 * [Pentesting Methodology](pentesting-methodology.md)
