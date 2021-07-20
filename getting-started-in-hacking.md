@@ -1,6 +1,6 @@
 # Getting Started in Hacking
 
-## Learning by Practice
+## Learning by Practice \(**CTF\)**
 
 ### [https://tryhackme.com/](https://tryhackme.com/)
 
